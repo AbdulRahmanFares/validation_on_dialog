@@ -4,7 +4,21 @@
 
 ## Screenshots
 
-[Include screenshots of your app to showcase its appearance]
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_1.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_2.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_3.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_4.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_5.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_6.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_7.png" width="400">
+
+<img src="https://github.com/AbdulRahmanFares/validation_on_dialog/blob/main/screenshots/validation_on_dialog_8.png" width="400">
 
 ## Getting Started
 
@@ -55,16 +69,6 @@ This project uses the following dependencies:
 
 - `google_fonts`: A package for using Google Fonts in Flutter.
 - `colorful_safe_area`: A package for adding color to the SafeArea in Flutter apps.
-
-Make sure to include these dependencies in your `pubspec.yaml` file as follows:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  google_fonts: ^6.1.0
-  colorful_safe_area: ^1.0.0
-```
 
 Feel free to adjust the version numbers based on the latest versions available.
 
