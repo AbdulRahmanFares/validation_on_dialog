@@ -24,7 +24,7 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
 
     return AlertDialog(
       content: SizedBox(
-        height: screenHeight * 0.3,
+        height: screenHeight * 0.286,
         width: screenWidth * 0.683,
         child: Column(
           children: [
@@ -34,29 +34,37 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
 
             // Name
             Container(
-              padding: EdgeInsets.all(screenWidth * 0.05),
+              padding: EdgeInsets.only(
+                left: screenWidth * 0.05,
+                right: screenWidth * 0.05
+              ),
               height: screenHeight * 0.07,
               decoration: BoxDecoration(
                 color: nameContainerColor,
                 borderRadius: BorderRadius.circular(screenWidth * 0.07)
               ),
               child: TextFormField(
-                cursorColor: Colors.black54,
+                maxLines: 1,
+                cursorColor: Colors.grey,
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 15), // To vertically center the hint text inside the TextFormField 
+                  border: InputBorder.none, // Remove the underline
                   hintText: "Name",
                   hintStyle: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.04,
                     color: Colors.black54,
                     fontWeight: FontWeight.w500,
-                    letterSpacing: 1
-                  ),
-                  border: InputBorder.none // Remove the underline
+                    letterSpacing: 2
+                  )
                 ),
+
+                // User input style
                 style: GoogleFonts.poppins(
                   fontSize: screenWidth * 0.04,
                   color: Colors.black54,
                   fontWeight: FontWeight.w500,
-                  letterSpacing: 1
+                  letterSpacing: 2
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -71,29 +79,37 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
 
             // Id
             Container(
-              padding: EdgeInsets.all(screenWidth * 0.05),
+              padding: EdgeInsets.only(
+                left: screenWidth * 0.05,
+                right: screenWidth * 0.05
+              ),
               height: screenHeight * 0.07,
               decoration: BoxDecoration(
                 color: idContainerColor,
                 borderRadius: BorderRadius.circular(screenWidth * 0.07)
               ),
               child: TextFormField(
-                cursorColor: Colors.black54,
+                maxLines: 1,
+                cursorColor: Colors.grey,
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 15), // To vertically center the hint text inside the TextFormField 
+                  border: InputBorder.none, // Remove the underline
                   hintText: "Id",
                   hintStyle: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.04,
                     color: Colors.black54,
                     fontWeight: FontWeight.w500,
-                    letterSpacing: 1
-                  ),
-                  border: InputBorder.none // Remove the underline
+                    letterSpacing: 2
+                  )
                 ),
+
+                // User input style
                 style: GoogleFonts.poppins(
                   fontSize: screenWidth * 0.04,
                   color: Colors.black54,
                   fontWeight: FontWeight.w500,
-                  letterSpacing: 1
+                  letterSpacing: 2
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -129,7 +145,7 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
                       "Cancel",
                       style: GoogleFonts.poppins(
                         fontSize: screenWidth * 0.035,
-                        color: Colors.grey,
+                        color: Colors.black54,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 1
                       )
