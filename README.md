@@ -1,6 +1,6 @@
 # Validation on Dialog
 
-**Validation on Dialog** is a Flutter app that demonstrates a dialog-based form validation. The app allows users to input values for "Name" and "Id" in a two-level dialog structure, with real-time color updates based on the validation status.
+**Validation on Dialog** is a Flutter app that demonstrates a dialog-based form validation. The app allows users to input values for "Name" and "Id" in an AlertDialog, with real-time color updates based on the validation status.
 
 ## Screenshots
 
@@ -39,13 +39,12 @@ To run this project locally, follow these steps:
 ## Features
 
 - **Dialog-Based Form Validation:** Demonstrates form validation within an AlertDialog.
-- **Two-Level Dialog Structure:** Engage users with a dialog hierarchy for interactive input.
 - **Real-time Color Updates:** See instant color changes based on validation status.
 - **Cancel and Confirm Actions:** Allow users to cancel or confirm their input.
 
 ## How to Use
 
-1. Tap on the "AlertBox" button in the main screen to open the dialog.
+1. Tap on the "AlertBox" button on the main screen to open the dialog.
 2. Enter values for "Name" and "Id" in the respective fields.
 3. The container colors will update in real-time based on the validation status.
 4. Confirm or cancel the input.
@@ -54,13 +53,24 @@ To run this project locally, follow these steps:
 
 This project uses the following dependencies:
 
-- `flutter`: The core framework for building Flutter apps.
 - `google_fonts`: A package for using Google Fonts in Flutter.
 - `colorful_safe_area`: A package for adding color to the SafeArea in Flutter apps.
 
+Make sure to include these dependencies in your `pubspec.yaml` file as follows:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  colorful_safe_area: ^1.0.0
+```
+
+Feel free to adjust the version numbers based on the latest versions available.
+
 ## Issues and Contributions
 
-If you encounter any issues or have suggestions for improvement, feel free to [open an issue](https://github.com/your-username/validation_on_dialog/issues) or submit a pull request.
+If you encounter any issues or have suggestions for improvement, feel free to [open an issue](https://github.com/AbdulRahmanFares/validation_on_dialog/issues) or submit a pull request.
 
 ## License
 
