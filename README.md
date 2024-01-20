@@ -58,10 +58,22 @@ To run this project locally, follow these steps:
 
 ## How to Use
 
-1. Tap on the "AlertBox" button on the main screen to open the dialog.
-2. Enter values for "Name" and "Id" in the respective fields.
-3. The container colors will update in real-time based on the validation status.
-4. Confirm or cancel the input.
+1. **Open the Dialog:**
+   - Tap on the "AlertBox" button on the main screen to open the dialog.
+
+2. **Input Values:**
+   - In the dialog, enter values for both "Name" and "Id" in their respective fields.
+
+3. **Real-time Color Updates:**
+   - Witness real-time color updates of the input containers based on the validation status.
+     - If both "Name" and "Id" are empty, both containers turn red.
+     - If only one of them is empty, only that container turns red.
+
+4. **Confirm or Cancel:**
+   - Confirm your input by tapping the "Ok" button.
+   - Alternatively, cancel the input and close the dialog using the "Cancel" button.
+
+This interactive process allows you to seamlessly input values, receive instant feedback on the validation status, and make decisions based on the provided options.
 
 ## Dependencies
 
@@ -69,8 +81,6 @@ This project uses the following dependencies:
 
 - `google_fonts`: A package for using Google Fonts in Flutter.
 - `colorful_safe_area`: A package for adding color to the SafeArea in Flutter apps.
-
-Feel free to adjust the version numbers based on the latest versions available.
 
 ## Issues and Contributions
 
