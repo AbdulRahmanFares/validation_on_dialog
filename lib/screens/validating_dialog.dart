@@ -45,7 +45,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
               ),
               child: TextFormField(
                 maxLines: 1,
-                cursorColor: Colors.grey,
+                cursorColor: nameContainerColor == Colors.white
+                  ? Colors.grey
+                  : Colors.white54,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(vertical: 15), // To vertically center the hint text inside the TextFormField 
@@ -53,7 +55,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
                   hintText: "Name",
                   hintStyle: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.04,
-                    color: Colors.black54,
+                    color: nameContainerColor == Colors.white
+                      ? Colors.black54
+                      : Colors.white,
                     fontWeight: FontWeight.w500,
                     letterSpacing: 2
                   )
@@ -62,7 +66,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
                 // User input style
                 style: GoogleFonts.poppins(
                   fontSize: screenWidth * 0.04,
-                  color: Colors.black54,
+                  color: nameContainerColor == Colors.white
+                    ? Colors.black54
+                    : Colors.white,
                   fontWeight: FontWeight.w500,
                   letterSpacing: 2
                 ),
@@ -90,7 +96,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
               ),
               child: TextFormField(
                 maxLines: 1,
-                cursorColor: Colors.grey,
+                cursorColor: idContainerColor == Colors.white
+                  ? Colors.grey
+                  : Colors.white54,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(vertical: 15), // To vertically center the hint text inside the TextFormField 
@@ -98,7 +106,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
                   hintText: "Id",
                   hintStyle: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.04,
-                    color: Colors.black54,
+                    color: idContainerColor == Colors.white
+                      ? Colors.black54
+                      : Colors.white,
                     fontWeight: FontWeight.w500,
                     letterSpacing: 2
                   )
@@ -107,7 +117,9 @@ class _ValidatingDialogState extends State<ValidatingDialog> {
                 // User input style
                 style: GoogleFonts.poppins(
                   fontSize: screenWidth * 0.04,
-                  color: Colors.black54,
+                  color: idContainerColor == Colors.white
+                    ? Colors.black54
+                    : Colors.white,
                   fontWeight: FontWeight.w500,
                   letterSpacing: 2
                 ),
