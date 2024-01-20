@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:validation_on_dialog/screens/validating_dialog.dart';
+import 'package:colorful_safe_area/colorful_safe_area.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,10 +18,12 @@ class _HomePageState extends State<HomePage> {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return SafeArea(
+    return ColorfulSafeArea(
+      color: Colors.grey,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.cyan,
+          backgroundColor: Colors.black,
+          toolbarHeight: screenHeight * 0.09,
           title: Text(
             "VALIDATION ON DIALOG",
             style: GoogleFonts.poppins(
